@@ -2,6 +2,10 @@ import express from 'express'
 
 const app = express()
 
+app.get('/', (req, res) => {
+    res.send('WELCOME!')
+})
+
 app.get('/ep1', (req, res) => {
     res.send("/ep1 is working!")
 })
